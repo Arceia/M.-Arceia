@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #faf8f3;
+    color: #28231f;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    line-height: 1.7;
+}
+
+/* Header */
+
+header {
+    max-width: 900px;
+    margin: auto;
+    padding: 32px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #ddd6c8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #28231f;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    max-width: 760px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+section {
+    padding: 72px 0;
+}
+
+#home {
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Book card */
+
+.book {
+    margin-top: 32px;
+    padding: 32px;
+
+    background: white;
+
+    border: 1px solid #ddd6c8;
+    border-radius: 10px;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #75695e;
+    font-style: italic;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    align-self: flex-start;
+
+    margin-top: 18px;
+    padding: 10px 18px;
+
+    color: white;
+    background: #49352d;
+
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background: #2f211c;
+}
+
+/* Footer */
+
+footer {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 32px 24px;
+
+    border-top: 1px solid #ddd6c8;
+
+    text-align: center;
+    color: #75695e;
+}
+
+/* Phone layout */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+
+        padding: 24px 18px;
+    }
+
+    nav {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 0 18px;
+    }
+
+    section {
+        padding: 48px 0;
+    }
+
+    #home {
+        min-height: auto;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .book {
+        padding: 22px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
