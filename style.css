@@ -179,3 +179,96 @@ footer {
         font-size: 1rem;
     }
 }
+/* Reading page */
+
+.reader {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+}
+
+.manuscript {
+    margin-top: 36px;
+}
+
+.story-header {
+    text-align: center;
+    border: 0;
+    padding: 0;
+}
+
+.story-header h1 {
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    margin: 6px 0;
+}
+
+.series {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #75695e;
+    font-size: 0.85rem;
+}
+
+.story-title {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 0;
+}
+
+.author {
+    color: #75695e;
+}
+
+.manuscript hr {
+    border: 0;
+    border-top: 1px solid #ddd6c8;
+    margin: 48px 0;
+}
+
+.chapter-label {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #75695e;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+.chapter h2 {
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+.chapter p {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    margin: 0 0 1.35em;
+}
+
+.back-link {
+    color: #49352d;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .reader {
+        padding: 32px 18px 64px;
+    }
+
+    .chapter p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .chapter h2 {
+        margin-bottom: 36px;
+    }
+}
+ 
